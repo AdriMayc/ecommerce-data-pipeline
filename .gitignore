@@ -28,7 +28,7 @@ dbt/logs/
 # Sistema
 .DS_Store
 
-
+# Arquivos Csv gerados
 data/*.csv
 data/*.json
 
