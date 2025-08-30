@@ -31,4 +31,4 @@ dbt/logs/
 src/extraction/*.py
 data/*.csv
 data/*.json
-data/*.py
+
