@@ -2,6 +2,7 @@ import pandas as pd
 import logging
 from typing import Dict, Any
 from datetime import datetime
+from pprint import pprint
 
 # Configurar logging
 logging.basicConfig(
@@ -96,8 +97,12 @@ def main():
         orders_report = validator.validate_orders(orders_df, customers_df)
         customers_report = validator.validate_customers(customers_df)
 
-        print("\n📊 Relatório Orders:", orders_report)
-        print("📊 Relatório Customers:", customers_report)
+        # 📊 Output mais legível usando pprint
+        print("\n📊 Relatório Orders:")
+        pprint(orders_report, indent=4)
+
+        print("\n📊 Relatório Customers:")
+        pprint(customers_report, indent=4)
 
     except Exception as e:
         logger.error(f"Erro na execução: {str(e)}")
