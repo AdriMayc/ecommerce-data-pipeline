@@ -28,7 +28,7 @@ dbt/logs/
 # Sistema
 .DS_Store
 
-src/extraction/*.py
+
 data/*.csv
 data/*.json
 
