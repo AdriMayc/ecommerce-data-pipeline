@@ -1,0 +1,34 @@
+# Ambiente virtual
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Credenciais
+.env
+.env.*
+
+# Logs
+*.log
+
+# Airflow
+airflow/logs/
+airflow/tmp/
+airflow/airflow.cfg
+airflow/unittests.cfg
+
+# dbt compilados
+dbt/target/
+dbt/logs/
+
+# Sistema
+.DS_Store
+
+src/extraction/*.py
+data/*.csv
+data/*.json
+data/*.py
